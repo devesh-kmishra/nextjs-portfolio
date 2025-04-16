@@ -1,0 +1,73 @@
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Link from "next/link";
+import { FaHome, FaGithub, FaLinkedin } from "react-icons/fa";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: "Devesh's Portfolio",
+  description:
+    "A portfolio website showcasing work and skills of Devesh Krishna Mishra.",
+};
+
+export default function RootLayout({ children }) {
+  const resumeUrl =
+    "https://drive.google.com/file/d/1xbAKwudgncP3xmS5OfMB488rT7cyq-GX/view?usp=sharing";
+
+  return (
+    <html lang='en'>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <div className='h-full flex items-center justify-between px-12 py-4 text-xl'>
+          <Link
+            href='/'
+            className='flex hover:scale-95 transition-all duration-100'
+          >
+            <FaHome className='text-2xl mr-1 self-center' />
+            Home
+          </Link>
+          <div className='flex gap-12'>
+            <Link
+              href='/about'
+              className='hover:scale-95 transition-all duration-100'
+            >
+              About
+            </Link>
+            <Link
+              href={resumeUrl}
+              target='_blank'
+              className='hover:scale-95 transition-all duration-100'
+            >
+              Resume
+            </Link>
+            <Link
+              href='https://github.com/devesh-kmishra'
+              target='_blank'
+              className='flex hover:scale-95 transition-all duration-100'
+            >
+              <FaGithub className='text-2xl self-center' />
+            </Link>
+            <Link
+              href='https://www.linkedin.com/in/devesh-krishna-mishra-0563b5235'
+              target='_blank'
+              className='flex hover:scale-95 transition-all duration-100'
+            >
+              <FaLinkedin className='text-2xl self-center' />
+            </Link>
+          </div>
+        </div>
+        {children}
+      </body>
+    </html>
+  );
+}
