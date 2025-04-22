@@ -4,16 +4,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className='text-center'>
-      <div className='my-8 text-blue-500'>
+      <div className='my-8 text-blue-500 font-[family-name:var(--font-geist-mono)]'>
         <div className='text-6xl'>Hello!</div>
         <div className='text-4xl'>I'm Devesh Krishna Mishra.</div>
       </div>
       <div className='my-4'>
         <div className='text-4xl'>Projects</div>
 
-        <div className='flex justify-center gap-4 m-4'>
+        <div className='lg:flex justify-center gap-4 w-[300px] lg:w-auto mx-auto my-4 lg:m-4'>
           <Link href='https://chat-messenger-cgvz.onrender.com' target='_blank'>
-            <div className='w-[100vw] md:w-[300px] h-[350px] border-1 rounded flex-col hover:scale-95 transition-all duration-200'>
+            <div className='w-[300px] h-[350px] border-1 rounded flex-col hover:scale-95 transition-all duration-200 mb-4'>
               <Image
                 src='/chat-messenger-screenshot.png'
                 alt='Chat Messenger Screenshot'
@@ -29,7 +29,7 @@ export default function Home() {
           </Link>
 
           <Link href='https://helioweb-bingo.vercel.app/' target='_blank'>
-            <div className='w-[100vw] md:w-[300px] h-[350px] border-1 rounded flex-col hover:scale-95 transition-all duration-200'>
+            <div className='w-[300px] h-[350px] border-1 rounded flex-col hover:scale-95 transition-all duration-200'>
               <Image
                 src='/bingo-game-screenshot.png'
                 alt='Bingo Game Screenshot'

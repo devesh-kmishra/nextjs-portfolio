@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { FaHome, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -10,6 +10,10 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const roboto = Roboto({
   subsets: ["latin"],
 });
 
@@ -26,9 +30,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
-        <div className='h-full flex items-center justify-between px-12 py-4 text-xl'>
+        <div className='h-full flex items-center justify-between px-4 lg:px-12 py-4 lg:text-xl'>
           <Link
             href='/'
             className='flex hover:scale-95 transition-all duration-100'
@@ -36,7 +40,7 @@ export default function RootLayout({ children }) {
             <FaHome className='text-2xl mr-1 self-center' />
             Home
           </Link>
-          <div className='flex gap-12'>
+          <div className='flex gap-10 lg:gap-12'>
             <Link
               href='/about'
               className='hover:scale-95 transition-all duration-100'

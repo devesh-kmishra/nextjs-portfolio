@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className='text-center'>
       <h1 className={`${imperialScript.className} text-6xl`}>About Me</h1>
-      <div className='text-xl'>
+      <div className='text-xl m-4'>
         <p className='my-4'>
           I am passionate about software development and looking to start my
           career in this field.
