@@ -35,12 +35,12 @@ export default function RootLayout({ children }) {
         <div className='h-full flex items-center lg:justify-between px-4 lg:px-12 py-4 lg:text-xl'>
           <Link
             href='/'
-            className='flex hover:scale-95 transition-all duration-100 mr-8'
+            className='flex hover:scale-95 transition-all duration-100 mr-6'
           >
             <FaHome className='text-2xl mr-1 self-center' />
             Home
           </Link>
-          <div className='flex gap-8 lg:gap-12'>
+          <div className='flex gap-6 lg:gap-12'>
             <Link
               href='/about'
               className='hover:scale-95 transition-all duration-100'
