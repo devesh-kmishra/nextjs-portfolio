@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const resumeUrl =
-    "https://drive.google.com/file/d/1S3rgY-Me8xuL8y_0oHNPv47Qj-v4xG0y/view?usp=sharing";
+    "https://drive.google.com/file/d/1WS84abUo7eh3Z7E5nXzrJs4xoV5CmFe-/view?usp=sharing";
 
   return (
     <html lang='en'>
