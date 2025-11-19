@@ -34,5 +34,17 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+}
+
+.roboto {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+.roboto-slab {
+  font-family: var(--font-roboto-slab), serif;
+}
+
+.imperial-script {
+  font-family: var(--font-imperial-script), serif;
 }
