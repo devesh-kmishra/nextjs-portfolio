@@ -2,6 +2,7 @@
 
 import { ArrowDownRight, ArrowUpRight, Mail, Menu, X } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { SiGoodreads } from "react-icons/si";
 import { useState } from "react";
 
 const projects = [
@@ -127,7 +128,7 @@ export function Portfolio() {
           <div className="art-orbit orbit-two" />
           <div className="art-orbit orbit-three" />
           <div className="art-core">
-            DK<span>M</span>
+            JAVA<span>TS</span>
           </div>
           <div className="art-caption">
             BUILT WITH INTENTION
@@ -264,6 +265,13 @@ export function Portfolio() {
             aria-label="Email"
           >
             <Mail size={17} />
+          </a>
+          <a
+            href="https://www.goodreads.com/user/show/106736576-devesh"
+            target="_blank"
+            aria-label="Goodreads"
+          >
+            <SiGoodreads />
           </a>
         </div>
       </footer>
